@@ -19,31 +19,21 @@ export default function Login() {
     .then(res => console.log("Registered Successfully !! "))
     .catch(err => console.log(err));
   }
-  const [fromTime, setFromTime] = useState('');
-  const [toTime, setToTime] = useState('');
-
-  const handleFromTimeChange = (event) => {
-    const value = event.target.value;
-    setFromTime(value);
-  };
-
-  const handleToTimeChange = (event) => {
-    const value = event.target.value;
-    setToTime(value);
-  };
+  
   return (
-    <center>
-      <div class="container">
-    <div className="Auth-wrapper">
-      <div className="Auth-inner">
+    <center style={{padding:"15px"}}>
+      <div class="card4">
+    
       
         <form onSubmit={handleSubmit}>
         {/* <div className='background__content'> */}
-        <div className="X" style={{ fontSize:"60px" ,
-        backgroundColor:"beige",
-        position:"relative",
-        top:"-16px"}}>
-          </div>
+        {/* <div className="X" style={{ fontSize:"60px" , */}
+        {/* backgroundColor:"beige", */}
+        {/* position:"relative", */}
+        {/* top:"-16px"}}> */}
+          {/* </div> */}
+          
+
           <div className="form-input">
             <label>Event name</label>
             <input
@@ -88,22 +78,14 @@ export default function Login() {
           </div>
 
           <div className="form-input">
-             <spam></spam>
-            <label htmlFor="fromTimeInput">From:</label>
-      <input
-        id="fromTimeInput"
-        type="time"
-        value={fromTime}
-        onChange={handleFromTimeChange}
-      />
-      <br></br>
-      <label htmlFor="toTimeInput">To:</label>
-      <input
-        id="toTimeInput"
-        type="time"
-        value={toTime}
-        onChange={handleToTimeChange}
-      />
+            <label>Time of the Event</label>
+            <input
+              type="time"
+              name='time'
+              className="form-control1"
+              placeholder="Choose a suitable time "
+              onChange={handleChange}
+            />
           </div>
 
           <div className="form-input">
@@ -117,25 +99,26 @@ export default function Login() {
           </div>
           <br></br>
           <div className="form-input">
+          <label>Choose a picture you want for the QR code</label> 
+
           <div className="hero">
           <div className="cards">
-            <p> upload event's photo </p>
-            <img src="images/photo.jpg" alt=" "></img>
+            <img src="images/upload.jpg" alt=" "></img>
             <input type="file" name='picture' accept="image/jpeg,image/png,image/jpg" id="input-file"
             onChange={handleChange}/>
+            <br></br>
+            <button className="btn btn-primary" onClick={() => alert('Your event has been successfully sent to the admin')}
+            style={{ top:"2px",}}>Submit
+            </button>
           </div>
         </div>
           </div>
-          <br></br>
-            <button type="submit" className="btn btn-primary" 
-            style={{ top:"2px",}}>Submit
-            </button>
+          
+            
         </form>
         
         <div>
     </div>
-      </div>
-      </div>
     </div>
     </center>
   );

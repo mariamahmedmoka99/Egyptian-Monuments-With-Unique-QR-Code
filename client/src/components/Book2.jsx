@@ -32,7 +32,7 @@ export default function Book2() {
         <div className="Name-of-event" style={{fontSize: "40px" , padding:"9px"}}>World Chess Day</div>
         <div className="Des" >
         <div class="subtitle" style={{top: "32px"}}> <ion-icon name="time-outline" ></ion-icon> Thursday, July 20, 2023 at 6 PM</div>
-        <div class="Summary" style={{backgroundColor: "#745e40" }}>
+        <div class="Summary" style={{backgroundColor: "transparent" }}>
         <p >It’s world chess day Learn about the ancient Egyptian game of Senet (A mind game that’s similar to chess); 
 it was depicted on their tomb walls (such as in Queen Nefertari's), 
 and it was also discovered among funerary objects (such as King Tutankhamun's)

@@ -5,6 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -69,5 +70,3 @@ app.get('/graduation/booking', (req, res) => {
 app.listen(8081, () => {
   console.log("Listening on port 8081...");
 });
-
-

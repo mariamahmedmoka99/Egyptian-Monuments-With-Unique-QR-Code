@@ -19,13 +19,14 @@ import {
   Book2,
   Payment,
   Book3,
+  Roadmap,
   
 } from "./components";
 import Book from "./components/Book";
 import Getticket from "./components/Getticket";
 import Login from "./components/Login";
-import Panorama from "./components/Panorama";
-import TicketButton from './components/TicketButton';
+import Panorama from "./components/Roadmap";
+// import TicketButton from './components/TicketButton';
 
 ReactDOM.render(
   <Router>
@@ -41,14 +42,14 @@ ReactDOM.render(
       <Route path="/monument6" element={<Monument6 />} />
       <Route path="/monument7" element={<Monument7 />} />
       <Route path="/events" element={<Events />} /> 
-      <Route path="/TicketButton" element={<TicketButton />} />
+      {/* <Route path="/TicketButton" element={<TicketButton />} /> */}
       <Route path="/Book" element={<Book />} />  
       <Route path="/Book2" element={<Book2 />} />
       <Route path="/Book3" element={<Book3 />} />   
       <Route path="/Getticket" element={<Getticket />} />  
       <Route path="/Login" element={<Login />} />  
       <Route path="/Payment" element={<Payment />} />
-      <Route path="/Panorama" element={<Panorama />} /> 
+      <Route path="/Roadmap" element={<Roadmap />}/>
 
     </Routes>
     <Footer />
@@ -57,14 +58,3 @@ ReactDOM.render(
 
   document.getElementById('root')
 );
-
-const App = () => {
-  return (
-    <div>
-      <h1>Ticket Counter</h1>
-      <TicketButton />
-    </div>
-  );
-};
-
-export default App;

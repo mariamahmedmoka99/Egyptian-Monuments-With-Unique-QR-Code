@@ -34,11 +34,18 @@ export default function Getticket() {
   return (
     <center style={{padding:"35px"}}>
       <div className="card3">
+        <div className="container">
       <br></br>
       <div className="auth-wrapper">
         <div className="auth-inner">
           <form onSubmit={handleSubmit}>
           <div className="form-input">
+           
+          <img className="ticketimage" src="images/ticket.jpg" alt=" "></img>
+          
+            <br></br>
+            <br></br>
+
                 <strong style={{fontSize:"20px"}}>Book Your Tickets Now !!
                  {/* Available Tickets:{data[0].number} */}
                 </strong>
@@ -77,11 +84,7 @@ export default function Getticket() {
               className="form-control1"
               onChange={handleChange}
               />
-             
-              
-          
             </div>
-            <br></br>
 
             <div className="d-flex-count" style={{ height: "54vh", position: "relative", top: "20px" }}>
              
@@ -99,6 +102,7 @@ export default function Getticket() {
           </form>
         
         </div>
+  </div>
   </div>
     </div>
     </center>

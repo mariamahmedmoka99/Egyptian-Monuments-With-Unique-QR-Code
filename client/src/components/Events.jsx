@@ -24,6 +24,13 @@ function Events() {
   
   return (
     <center>
+ 
+    <div class="events" >
+    <img className='event-background' src='./images/m.jpg' alt=''/>
+    <div className='background__content'>
+    <div className='Even'>Events</div>
+   <p className='X'>Join us at the Museum for tours, demonstrations, lectures, and more.</p>
+   </div>
     <div class="events" >
     <div id="google_translate_element"></div>
     <div class="item-container">
@@ -37,8 +44,8 @@ function Events() {
                     <div class="separator"></div>
                     <div className='time'></div>
            <p><ion-icon name="time-outline "></ion-icon>
-              WEDNESDAY, June 21, 2024, 8:30PM – 10PM </p>
-            <p> Price of Ticket: 200 L.E.</p>
+              WEDNESDAY , June 21, 2024 at 8:30 PM </p>
+            <p> Price of Ticket: 160 L.E.</p>
             <p class="Book"><a href="/Book">Book now</a></p>
            
                   </div>
@@ -56,10 +63,9 @@ function Events() {
                     <div class="separator"></div>
                     <div className='time'></div>
            <p><ion-icon name="time-outline "></ion-icon>
-              THURSDAY, July 20, 2023, 6:00 PM – 10:00 PM </p>
-            <p> Price of Ticket: 200 L.E.</p>
+              THURSDAY, July 20, 2023, at 6:00 PM </p>
+            <p> Price of Ticket: 160 L.E.</p>
             <p class="Book"><a href="/Book2">Book now</a></p>
-           
                   </div>
                 </div>
             </div>
@@ -70,12 +76,14 @@ function Events() {
             </div>
             <div class="body-container2">
                 <div class="overlay"></div>
-                <div class="event-info">
+                <div class="event-info"style={{fontSize:"23px"}}>
                     <p class="title">Omar Khairat</p>
                     <div class="separator"></div>
                     <div className='time'> </div>
            <p><ion-icon name="time-outline"></ion-icon>
-            Sunday, August 20, 2023, 7:00 PM – 9:00 PM </p>
+            Sunday, August 20, 2023 at 7:00 PM </p>
+            <p> Price of Ticket: 160 L.E.</p>
+
                       <p class="Book">
                        <a href="/Book3">Book now</a></p></div>
                        </div>
@@ -91,7 +99,8 @@ function Events() {
           </button></h1>
         </div>
         </div>
-        
+        </div>
+
         
         </center>
   );

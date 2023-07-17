@@ -4,7 +4,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCol,
-  MDBContainer,
   MDBCardImage,
   MDBCardTitle,
   MDBInput,
@@ -73,11 +72,11 @@ export default function Book() {
   };
       
       return (
-        <center>
+        <center  style={{padding:"15px"}}>
       <div>
  <section class="cart" style= {{height:"500px"}}>
 
-        <MDBContainer fluid className="py-5">
+       
       <MDBRow className="d-flex justify-content-center">
         <MDBCol md="9" lg="7" xl="5">
           <MDBCard>
@@ -111,13 +110,14 @@ export default function Book() {
                  </MDBInput>
               <br></br>
                 <MDBRow className="mb-3">
-                  <MDBCol size="6">
+                  <MDBCol size="12">
                     <MDBInput
                     
                       id="form2"
                       type="month"
                       placeholder="Expire Date"
                       wrapperClass="mb-3"
+                      position="center"
                     />
                   </MDBCol>
                   <MDBCol size="6">
@@ -142,7 +142,6 @@ export default function Book() {
           </MDBCard>
         </MDBCol>
       </MDBRow>
-    </MDBContainer>
     </section>
 </div>
 </center>
